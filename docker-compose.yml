@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  waf:
+    image: owasp/modsecurity-crs:nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./ml_check.lua:/etc/modsecurity.d/ml_check.lua
+    environment:
+      - PARANOIA=1
+      - BACKEND=http://backend:8080
+    depends_on:
+      - ml-service
+
+  ml-service:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./waf_model.pkl:/app/waf_model.pkl
+      - ./vectorizer.pkl:/app/vectorizer.pkl
+
+  backend:
+    image: nginx:alpine

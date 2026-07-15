@@ -1,0 +1,612 @@
+http://localhost:5000/predict?q=<script>alert(1)</script>,1
+http://localhost:5000/?q=<script>alert(1)</script>,1
+http://localhost:5000/predict?q=<script>alert(1)</script>,1
+http://localhost:5000/predict?q=<script>alert(1)</script>,1
+http://localhost:5000/?name=John~,1
+http://localhost:5000/http://localhost:5000/?id=1'%20OR%201=1--"1=1--,1
+http://localhost:5000/?id=1'%20OR%201=1--,1
+http://localhost:5000/?id=1'%20OR%201=1--,1
+http://localhost:5000/?id=1'%20OR%201=1--,1
+http://localhost:5000/?q=<script>alert(1)</script>,1
+http://localhost:5000/?id=1'%20OR%201=1--,1
+http://localhost:5000/?q=<script>alert(1)</script>,1
+http://localhost:5000/?id=1'%20OR%201=1--,1
+http://localhost:5000/?id=1'%20OR%201=1--,1
+http://localhost:5000/predict?q=<script>alert(1)</script>,1
+timestamp,ip,url,action,reason
+timestamp,ip,url,action,reason
+2025-05-27 07:48:44,127.0.0.1,http://localhost:5000/?search=hello,BLOCKED,ML detection
+2025-05-27 07:49:19,127.0.0.1,http://localhost:5000/?search=hello,BLOCKED,ML detection
+timestamp,ip,url,action,reason
+timestamp,ip,url,action,reason
+2025-05-27 08:01:07,127.0.0.1,http://localhost:5000/,ALLOWED,
+2025-05-27 08:01:44,127.0.0.1,http://localhost:5000/?name=John,ALLOWED,
+2025-05-27 08:02:25,127.0.0.1,http://localhost:5000/?id=1'%20OR%201=1--,BLOCKED,Rule-based detection
+2025-05-27 08:03:05,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 08:03:07,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 08:06:03,127.0.0.1,http://localhost:5000/?q=<script>alert(5)</script>,BLOCKED,Rule-based detection
+2025-05-27 08:06:32,127.0.0.1,http://localhost:5000/?q=SELECT(FROM(WHERE))),ALLOWED,
+2025-05-27 08:07:31,127.0.0.1,"http://localhost:5000/?q=SELECT%20first_name,%20last_name,%20email%20FROM%20users%20WHERE%20is_active%20=%201",ALLOWED,
+2025-05-27 08:08:26,127.0.0.1,http://localhost:5000/?q=';%20DROP%20TABLE%20users,ALLOWED,
+2025-05-27 08:10:09,127.0.0.1,http://localhost:5000/?id=1'%20OR%201=1--,BLOCKED,Rule-based detection
+2025-05-27 08:26:39,127.0.0.1,http://localhost:5000/,ALLOWED,
+2025-05-27 08:27:07,127.0.0.1,http://localhost:5000/?q=<body%20onload=alert(1)>,BLOCKED,Rule-based detection
+2025-05-27 08:27:40,127.0.0.1,http://localhost:5000/?q=DROP%20TABLE%20users,ALLOWED,
+2025-05-27 08:34:59,127.0.0.1,http://localhost:5000/,ALLOWED,
+2025-05-27 08:35:17,127.0.0.1,http://localhost:5000/?q=DROP%20TABLE%20users,ALLOWED,
+2025-05-27 08:35:44,127.0.0.1,http://localhost:5000/?q=<img%20src=x%20onerror=alert(1)>,BLOCKED,Rule-based detection
+2025-05-27 08:43:42,127.0.0.1,http://localhost:5000/?search=admin'%20--,BLOCKED,Rule-based detection
+2025-05-27 08:43:53,127.0.0.1,"http://localhost:5000/?search=UNION%20SELECT%20null,%20username,%20password%20FROM%20users--",BLOCKED,Rule-based detection
+2025-05-27 08:44:06,127.0.0.1,http://localhost:5000/?search=';%20DROP%20TABLE%20users--,BLOCKED,Rule-based detection
+2025-05-27 15:43:44,127.0.0.1,http://localhost:5000/?search=admin',ALLOWED,
+2025-05-27 15:43:53,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-05-27 15:44:21,127.0.0.1,http://localhost:5000/?search=;%20DROP%20DATABASE%20test;%20--,ALLOWED,
+2025-05-27 15:44:46,127.0.0.1,http://localhost:5000/?s<svg%20onload=alert(1)>,BLOCKED,Rule-based detection
+2025-05-27 15:45:16,127.0.0.1,http://localhost:5000/?search=';%20DROP%20TABLE%20users--,BLOCKED,Rule-based detection
+2025-05-27 15:55:05,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 15:55:46,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 15:55:50,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 15:55:53,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 15:55:55,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 15:55:57,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-05-27 15:56:37,127.0.0.1,http://localhost:5000/?s<svg%20onload=alert(1)>,BLOCKED,Rule-based detection
+2025-05-28 12:43:51,127.0.0.1,http://localhost:5000/?name=John,ALLOWED,
+2025-05-28 12:44:03,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-05-28 12:44:27,127.0.0.1,http://localhost:5000/?id=1'%20OR%201=1--,BLOCKED,Rule-based detection
+2025-05-28 12:45:06,127.0.0.1,http://localhost:5000/?id=SELECT%20*%20FROM%20users,ALLOWED,
+2025-05-28 12:45:20,127.0.0.1,http://localhost:5000/?search=SELECT%20*%20FROM%20users,ALLOWED,
+2025-06-01 14:25:50,127.0.0.1,http://localhost:5000/,ALLOWED,
+2025-06-01 14:26:05,127.0.0.1,http://localhost:5000/,ALLOWED,
+2025-06-01 14:26:12,127.0.0.1,http://localhost:5000/?name=John,ALLOWED,
+2025-06-01 14:26:17,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-06-01 14:26:43,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-06-02 09:42:14,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-06-02 09:42:29,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-06-02 09:42:43,127.0.0.1,"http://localhost:5000/?search=UNION%20SELECT%20null,%20username,%20password%20FROM%20users",BLOCKED,Rule-based detection
+2025-06-15 11:35:16,127.0.0.1,http://localhost:5000/?s<svg%20onload=alert(1)>,BLOCKED,Rule-based detection
+2025-06-15 11:35:39,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-06-15 11:35:47,127.0.0.1,http://localhost:5000/?search=hello,ALLOWED,
+2025-06-15 11:38:44,127.0.0.1,http://localhost:5000/?search=test,ALLOWED,
+2025-07-09 08:24:59,127.0.0.1,http://localhost:5000/?id=1'%20OR%201=1--,BLOCKED,Rule-based detection
+2025-07-09 08:25:11,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-09 08:25:17,127.0.0.1,http://localhost:5000/?query=test,ALLOWED,
+2025-07-09 08:41:15,127.0.0.1,http://localhost:5000/?query=test.,ALLOWED,
+2025-07-10 20:17:38,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-07-10 20:17:49,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-10 20:23:24,127.0.0.1,http://localhost:5000/?id=1'%20OR%201=1--,BLOCKED,Rule-based detection
+2025-07-10 20:27:57,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-07-10 20:29:44,127.0.0.1,http://localhost:5000/?id=<svg%20onload=alert(1)>,BLOCKED,Rule-based detection
+2025-07-10 20:30:11,127.0.0.1,http://localhost:5000/?id=user=admin,ALLOWED,
+2025-07-12 15:27:09,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-07-12 15:27:15,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 15:27:15,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 15:27:47,127.0.0.1,http://localhost:5000/?q=DROP%20TABLE%20users,ALLOWED,
+2025-07-12 15:27:50,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 15:28:47,127.0.0.1,http://localhost:5000/?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-07-12 15:28:51,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 15:29:09,127.0.0.1,"http://localhost:5000/?search=UNION%20SELECT%20null,%20username,%20password%20FROM%20users",BLOCKED,Rule-based detection
+2025-07-12 15:29:11,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 15:29:30,127.0.0.1,http://localhost:5000/?search=DROP%20TABLE%20usersDROP%20TABLE%20users,ALLOWED,
+2025-07-12 15:29:32,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 17:02:05,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 17:05:11,127.0.0.1,http://localhost:5000/page?id=1,ALLOWED,
+2025-07-12 17:08:18,127.0.0.1,http://localhost:5000/product?id=1,ALLOWED,
+2025-07-12 17:13:19,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:20:06,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:23:51,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:24:02,127.0.0.1,http://localhost:5000/favicon.ico,ALLOWED,
+2025-07-12 17:25:52,127.0.0.1,http://localhost:5000/product?id=1,ALLOWED,
+2025-07-12 17:27:08,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,"http://localhost:5000/search?q=test&GSIX=2084%20AND%201%3D1%20UNION%20ALL%20SELECT%201,NULL,'<script>alert(""XSS"")</script>',table_name%20FROM%20information_schema.tables%20WHERE%202>1--/**/;%20EXEC%20xp_cmdshell('cat%20../../../etc/passwd')%23",BLOCKED,Rule-based detection
+2025-07-12 17:36:45,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,http://localhost:5000/search?q=6148,ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,"http://localhost:5000/search?q=test(.,.""),'))",ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,"http://localhost:5000/search?q=test'PjQPQb<'"">XNqvSI",ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,http://localhost:5000/search?q=test')%20AND%208756%3D4410%20AND%20('INne'%3D'INne,ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,http://localhost:5000/search?q=test')%20AND%201426%3D1426%20AND%20('apBI'%3D'apBI,ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,http://localhost:5000/search?q=test'%20AND%203458%3D7435%20AND%20'KJmO'%3D'KJmO,ALLOWED,
+2025-07-12 17:36:45,127.0.0.1,http://localhost:5000/search?q=test'%20AND%201426%3D1426%20AND%20'hZTA'%3D'hZTA,ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test)%20AND%207707%3D4275%20AND%20(2329%3D2329,ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test)%20AND%201426%3D1426%20AND%20(3114%3D3114,ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%201036%3D6828,ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%201426%3D1426,ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%207659%3D5671--%20Plqp,ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%201426%3D1426--%20ZTTL,ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=(SELECT%20(CASE%20WHEN%20(4496%3D6993)%20THEN%20'test'%20ELSE%20(SELECT%206993%20UNION%20SELECT%204770)%20END)),BLOCKED,Rule-based detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=(SELECT%20(CASE%20WHEN%20(2240%3D2240)%20THEN%20'test'%20ELSE%20(SELECT%202580%20UNION%20SELECT%206103)%20END)),BLOCKED,Rule-based detection
+2025-07-12 17:36:46,127.0.0.1,"http://localhost:5000/search?q=test')%20AND%20EXTRACTVALUE(9927,CONCAT(0x5c,0x71716a7871,(SELECT%20(ELT(9927%3D9927,1))),0x7171626b71))%20AND%20('tCKs'%3D'tCKs",ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,"http://localhost:5000/search?q=test'%20AND%20EXTRACTVALUE(9927,CONCAT(0x5c,0x71716a7871,(SELECT%20(ELT(9927%3D9927,1))),0x7171626b71))%20AND%20'EUGL'%3D'EUGL",ALLOWED,
+2025-07-12 17:36:46,127.0.0.1,"http://localhost:5000/search?q=test)%20AND%20EXTRACTVALUE(9927,CONCAT(0x5c,0x71716a7871,(SELECT%20(ELT(9927%3D9927,1))),0x7171626b71))%20AND%20(3422%3D3422",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,"http://localhost:5000/search?q=test%20AND%20EXTRACTVALUE(9927,CONCAT(0x5c,0x71716a7871,(SELECT%20(ELT(9927%3D9927,1))),0x7171626b71))",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,"http://localhost:5000/search?q=test%20AND%20EXTRACTVALUE(9927,CONCAT(0x5c,0x71716a7871,(SELECT%20(ELT(9927%3D9927,1))),0x7171626b71))--%20SajX",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test')%20AND%202376%3DCAST((CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113))||(SELECT%20(CASE%20WHEN%20(2376%3D2376)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113))%20AS%20NUMERIC)%20AND%20('wdjM'%3D'wdjM,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test'%20AND%202376%3DCAST((CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113))||(SELECT%20(CASE%20WHEN%20(2376%3D2376)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113))%20AS%20NUMERIC)%20AND%20'shFw'%3D'shFw,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test)%20AND%202376%3DCAST((CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113))||(SELECT%20(CASE%20WHEN%20(2376%3D2376)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113))%20AS%20NUMERIC)%20AND%20(6316%3D6316,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%202376%3DCAST((CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113))||(SELECT%20(CASE%20WHEN%20(2376%3D2376)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113))%20AS%20NUMERIC),BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%202376%3DCAST((CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113))||(SELECT%20(CASE%20WHEN%20(2376%3D2376)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113))%20AS%20NUMERIC)--%20oXWN,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test')%20AND%203178%20IN%20(SELECT%20(CHAR(113)%2BCHAR(113)%2BCHAR(106)%2BCHAR(120)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3178%3D3178)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(113)%2BCHAR(98)%2BCHAR(107)%2BCHAR(113)))%20AND%20('TPWs'%3D'TPWs,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test'%20AND%203178%20IN%20(SELECT%20(CHAR(113)%2BCHAR(113)%2BCHAR(106)%2BCHAR(120)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3178%3D3178)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(113)%2BCHAR(98)%2BCHAR(107)%2BCHAR(113)))%20AND%20'uaqb'%3D'uaqb,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test)%20AND%203178%20IN%20(SELECT%20(CHAR(113)%2BCHAR(113)%2BCHAR(106)%2BCHAR(120)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3178%3D3178)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(113)%2BCHAR(98)%2BCHAR(107)%2BCHAR(113)))%20AND%20(4407%3D4407,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%203178%20IN%20(SELECT%20(CHAR(113)%2BCHAR(113)%2BCHAR(106)%2BCHAR(120)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3178%3D3178)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(113)%2BCHAR(98)%2BCHAR(107)%2BCHAR(113))),BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%203178%20IN%20(SELECT%20(CHAR(113)%2BCHAR(113)%2BCHAR(106)%2BCHAR(120)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3178%3D3178)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(113)%2BCHAR(98)%2BCHAR(107)%2BCHAR(113)))--%20NnPX,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test')%20AND%205992%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5992%3D5992)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20('bOzV'%3D'bOzV,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test'%20AND%205992%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5992%3D5992)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20'FceP'%3D'FceP,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test)%20AND%205992%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5992%3D5992)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20(9597%3D9597,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%205992%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5992%3D5992)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113)||CHR(62)))%20FROM%20DUAL),BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test%20AND%205992%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(113)||CHR(106)||CHR(120)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5992%3D5992)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(113)||CHR(98)||CHR(107)||CHR(113)||CHR(62)))%20FROM%20DUAL)--%20NpkU,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,"http://localhost:5000/search?q=(SELECT%20CONCAT(CONCAT('qqjxq',(CASE%20WHEN%20(5775%3D5775)%20THEN%20'1'%20ELSE%20'0'%20END)),'qqbkq'))",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test');SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test';SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test);SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test;SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test');WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:46,127.0.0.1,http://localhost:5000/search?q=test';WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test);WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test;WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test');SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(101)||CHR(65)||CHR(105)||CHR(109),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test';SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(101)||CHR(65)||CHR(105)||CHR(109),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test);SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(101)||CHR(65)||CHR(105)||CHR(109),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test;SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(101)||CHR(65)||CHR(105)||CHR(109),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test')%20AND%20(SELECT%209509%20FROM%20(SELECT(SLEEP(5)))dFBb)%20AND%20('DIhH'%3D'DIhH,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test'%20AND%20(SELECT%209509%20FROM%20(SELECT(SLEEP(5)))dFBb)%20AND%20'CGHb'%3D'CGHb,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test)%20AND%20(SELECT%209509%20FROM%20(SELECT(SLEEP(5)))dFBb)%20AND%20(6952%3D6952,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20AND%20(SELECT%209509%20FROM%20(SELECT(SLEEP(5)))dFBb),BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20AND%20(SELECT%209509%20FROM%20(SELECT(SLEEP(5)))dFBb)--%20oDKd,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test')%20AND%203390%3D(SELECT%203390%20FROM%20PG_SLEEP(5))%20AND%20('uEtF'%3D'uEtF,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test'%20AND%203390%3D(SELECT%203390%20FROM%20PG_SLEEP(5))%20AND%20'jHmP'%3D'jHmP,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test)%20AND%203390%3D(SELECT%203390%20FROM%20PG_SLEEP(5))%20AND%20(9179%3D9179,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20AND%203390%3D(SELECT%203390%20FROM%20PG_SLEEP(5)),BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20AND%203390%3D(SELECT%203390%20FROM%20PG_SLEEP(5))--%20pEzB,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test')%20WAITFOR%20DELAY%20'0:0:5'%20AND%20('AUyt'%3D'AUyt,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test'%20WAITFOR%20DELAY%20'0:0:5'%20AND%20'bHQL'%3D'bHQL,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test)%20WAITFOR%20DELAY%20'0:0:5'%20AND%20(1270%3D1270,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20WAITFOR%20DELAY%20'0:0:5',BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20WAITFOR%20DELAY%20'0:0:5'--%20QrNc,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test')%20AND%204397%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(71)||CHR(85)||CHR(110)||CHR(120),5)%20AND%20('ShVI'%3D'ShVI",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test'%20AND%204397%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(71)||CHR(85)||CHR(110)||CHR(120),5)%20AND%20'sOGt'%3D'sOGt",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test)%20AND%204397%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(71)||CHR(85)||CHR(110)||CHR(120),5)%20AND%20(9990%3D9990",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test%20AND%204397%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(71)||CHR(85)||CHR(110)||CHR(120),5)",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,"http://localhost:5000/search?q=test%20AND%204397%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(71)||CHR(85)||CHR(110)||CHR(120),5)--%20Vfaw",BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test')%20ORDER%20BY%201--%20pnNb,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test'%20ORDER%20BY%201--%20fhWh,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test)%20ORDER%20BY%201--%20UIdQ,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%201--%20vLSr,BLOCKED,UBA anomaly detection
+2025-07-12 17:36:47,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%201--%20BghY,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:57,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,http://localhost:5000/search?q=3554,ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,"http://localhost:5000/search?q=test.))."",.('.",ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,"http://localhost:5000/search?q=test'ypyDLz<'"">VLYloZ",ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,http://localhost:5000/search?q=test')%20AND%208981%3D8430%20AND%20('EcWS'%3D'EcWS,ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,http://localhost:5000/search?q=test')%20AND%206105%3D6105%20AND%20('bQxt'%3D'bQxt,ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,http://localhost:5000/search?q=test'%20AND%202113%3D7942%20AND%20'feax'%3D'feax,ALLOWED,
+2025-07-12 17:44:57,127.0.0.1,http://localhost:5000/search?q=test'%20AND%206105%3D6105%20AND%20'JVqo'%3D'JVqo,ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test)%20AND%205067%3D4348%20AND%20(6735%3D6735,ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test)%20AND%206105%3D6105%20AND%20(9590%3D9590,ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%205872%3D2553,ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%206105%3D6105,ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%207603%3D8434--%20xmim,ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%206105%3D6105--%20fpgp,ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=(SELECT%20(CASE%20WHEN%20(2187%3D1623)%20THEN%20'test'%20ELSE%20(SELECT%201623%20UNION%20SELECT%205605)%20END)),BLOCKED,Rule-based detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=(SELECT%20(CASE%20WHEN%20(7852%3D7852)%20THEN%20'test'%20ELSE%20(SELECT%202270%20UNION%20SELECT%201570)%20END)),BLOCKED,Rule-based detection
+2025-07-12 17:44:58,127.0.0.1,"http://localhost:5000/search?q=test')%20AND%20EXTRACTVALUE(5245,CONCAT(0x5c,0x717a717171,(SELECT%20(ELT(5245%3D5245,1))),0x716b767171))%20AND%20('pHta'%3D'pHta",ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,"http://localhost:5000/search?q=test'%20AND%20EXTRACTVALUE(5245,CONCAT(0x5c,0x717a717171,(SELECT%20(ELT(5245%3D5245,1))),0x716b767171))%20AND%20'NTZh'%3D'NTZh",ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,"http://localhost:5000/search?q=test)%20AND%20EXTRACTVALUE(5245,CONCAT(0x5c,0x717a717171,(SELECT%20(ELT(5245%3D5245,1))),0x716b767171))%20AND%20(4752%3D4752",ALLOWED,
+2025-07-12 17:44:58,127.0.0.1,"http://localhost:5000/search?q=test%20AND%20EXTRACTVALUE(5245,CONCAT(0x5c,0x717a717171,(SELECT%20(ELT(5245%3D5245,1))),0x716b767171))",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,"http://localhost:5000/search?q=test%20AND%20EXTRACTVALUE(5245,CONCAT(0x5c,0x717a717171,(SELECT%20(ELT(5245%3D5245,1))),0x716b767171))--%20eVvP",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test')%20AND%206304%3DCAST((CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113))||(SELECT%20(CASE%20WHEN%20(6304%3D6304)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113))%20AS%20NUMERIC)%20AND%20('frRr'%3D'frRr,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test'%20AND%206304%3DCAST((CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113))||(SELECT%20(CASE%20WHEN%20(6304%3D6304)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113))%20AS%20NUMERIC)%20AND%20'Idrn'%3D'Idrn,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test)%20AND%206304%3DCAST((CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113))||(SELECT%20(CASE%20WHEN%20(6304%3D6304)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113))%20AS%20NUMERIC)%20AND%20(5447%3D5447,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%206304%3DCAST((CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113))||(SELECT%20(CASE%20WHEN%20(6304%3D6304)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113))%20AS%20NUMERIC),BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%206304%3DCAST((CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113))||(SELECT%20(CASE%20WHEN%20(6304%3D6304)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113))%20AS%20NUMERIC)--%20ZaXD,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test')%20AND%205295%20IN%20(SELECT%20(CHAR(113)%2BCHAR(122)%2BCHAR(113)%2BCHAR(113)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(5295%3D5295)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(107)%2BCHAR(118)%2BCHAR(113)%2BCHAR(113)))%20AND%20('uvDJ'%3D'uvDJ,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test'%20AND%205295%20IN%20(SELECT%20(CHAR(113)%2BCHAR(122)%2BCHAR(113)%2BCHAR(113)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(5295%3D5295)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(107)%2BCHAR(118)%2BCHAR(113)%2BCHAR(113)))%20AND%20'jnhG'%3D'jnhG,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test)%20AND%205295%20IN%20(SELECT%20(CHAR(113)%2BCHAR(122)%2BCHAR(113)%2BCHAR(113)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(5295%3D5295)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(107)%2BCHAR(118)%2BCHAR(113)%2BCHAR(113)))%20AND%20(5666%3D5666,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%205295%20IN%20(SELECT%20(CHAR(113)%2BCHAR(122)%2BCHAR(113)%2BCHAR(113)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(5295%3D5295)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(107)%2BCHAR(118)%2BCHAR(113)%2BCHAR(113))),BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%205295%20IN%20(SELECT%20(CHAR(113)%2BCHAR(122)%2BCHAR(113)%2BCHAR(113)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(5295%3D5295)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(107)%2BCHAR(118)%2BCHAR(113)%2BCHAR(113)))--%20QOWQ,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test')%20AND%205665%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5665%3D5665)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20('sYZI'%3D'sYZI,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test'%20AND%205665%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5665%3D5665)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20'iXHd'%3D'iXHd,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test)%20AND%205665%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5665%3D5665)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20(6847%3D6847,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%205665%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5665%3D5665)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113)||CHR(62)))%20FROM%20DUAL),BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test%20AND%205665%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(122)||CHR(113)||CHR(113)||CHR(113)||(SELECT%20(CASE%20WHEN%20(5665%3D5665)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(107)||CHR(118)||CHR(113)||CHR(113)||CHR(62)))%20FROM%20DUAL)--%20VwKn,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,"http://localhost:5000/search?q=(SELECT%20CONCAT(CONCAT('qzqqq',(CASE%20WHEN%20(1484%3D1484)%20THEN%20'1'%20ELSE%20'0'%20END)),'qkvqq'))",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test');SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test';SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test);SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:58,127.0.0.1,http://localhost:5000/search?q=test;SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test');WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test';WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test);WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test;WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test');SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(70)||CHR(119)||CHR(104)||CHR(68),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test';SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(70)||CHR(119)||CHR(104)||CHR(68),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test);SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(70)||CHR(119)||CHR(104)||CHR(68),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test;SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(70)||CHR(119)||CHR(104)||CHR(68),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test')%20AND%20(SELECT%203025%20FROM%20(SELECT(SLEEP(5)))ddCy)%20AND%20('IXnr'%3D'IXnr,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test'%20AND%20(SELECT%203025%20FROM%20(SELECT(SLEEP(5)))ddCy)%20AND%20'qDdF'%3D'qDdF,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test)%20AND%20(SELECT%203025%20FROM%20(SELECT(SLEEP(5)))ddCy)%20AND%20(9500%3D9500,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test%20AND%20(SELECT%203025%20FROM%20(SELECT(SLEEP(5)))ddCy),BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test%20AND%20(SELECT%203025%20FROM%20(SELECT(SLEEP(5)))ddCy)--%20UnlR,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test')%20AND%207192%3D(SELECT%207192%20FROM%20PG_SLEEP(5))%20AND%20('DUxd'%3D'DUxd,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test'%20AND%207192%3D(SELECT%207192%20FROM%20PG_SLEEP(5))%20AND%20'VyjI'%3D'VyjI,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test)%20AND%207192%3D(SELECT%207192%20FROM%20PG_SLEEP(5))%20AND%20(9398%3D9398,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test%20AND%207192%3D(SELECT%207192%20FROM%20PG_SLEEP(5)),BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test%20AND%207192%3D(SELECT%207192%20FROM%20PG_SLEEP(5))--%20HRgw,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test')%20WAITFOR%20DELAY%20'0:0:5'%20AND%20('DyGf'%3D'DyGf,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test'%20WAITFOR%20DELAY%20'0:0:5'%20AND%20'CTMo'%3D'CTMo,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test)%20WAITFOR%20DELAY%20'0:0:5'%20AND%20(2328%3D2328,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test%20WAITFOR%20DELAY%20'0:0:5',BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,http://localhost:5000/search?q=test%20WAITFOR%20DELAY%20'0:0:5'--%20VeBw,BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test')%20AND%202196%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(86)||CHR(101)||CHR(67),5)%20AND%20('eXGS'%3D'eXGS",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test'%20AND%202196%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(86)||CHR(101)||CHR(67),5)%20AND%20'xSwD'%3D'xSwD",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test)%20AND%202196%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(86)||CHR(101)||CHR(67),5)%20AND%20(2901%3D2901",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test%20AND%202196%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(86)||CHR(101)||CHR(67),5)",BLOCKED,UBA anomaly detection
+2025-07-12 17:44:59,127.0.0.1,"http://localhost:5000/search?q=test%20AND%202196%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(86)||CHR(101)||CHR(67),5)--%20OYhP",BLOCKED,UBA anomaly detection
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test')%20ORDER%20BY%201--%20clGd,BLOCKED,Rule-based detection
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test'%20ORDER%20BY%201--%20UfLI,BLOCKED,Rule-based detection
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test)%20ORDER%20BY%201--%20XNBq,ALLOWED,
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test)%20ORDER%20BY%205164--%20sPWT,ALLOWED,
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%201--%20MpdJ,ALLOWED,
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%204720--%20tIlp,ALLOWED,
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%201--%20sSxi,ALLOWED,
+2025-07-12 17:46:31,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%206995--%20IlTq,ALLOWED,
+2025-07-12 17:48:32,127.0.0.1,http://localhost:5000/search?q=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-07-12 17:49:51,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:49:51,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 17:49:51,127.0.0.1,http://localhost:5000/search?q=4795,ALLOWED,
+2025-07-12 17:49:51,127.0.0.1,"http://localhost:5000/search?q=test)')(.(("".,",ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,"http://localhost:5000/search?q=test'smLxQP<'"">jwdvos",ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test')%20AND%205411%3D3070%20AND%20('ZWSo'%3D'ZWSo,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test')%20AND%203658%3D3658%20AND%20('tuyO'%3D'tuyO,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test'%20AND%208134%3D1221%20AND%20'Epry'%3D'Epry,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test'%20AND%203658%3D3658%20AND%20'eWUa'%3D'eWUa,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test)%20AND%208365%3D9026%20AND%20(2215%3D2215,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test)%20AND%203658%3D3658%20AND%20(8355%3D8355,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test%20AND%207072%3D8979,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test%20AND%203658%3D3658,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test%20AND%209772%3D8070--%20HnaL,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=test%20AND%203658%3D3658--%20Iyst,ALLOWED,
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=(SELECT%20(CASE%20WHEN%20(2157%3D6253)%20THEN%20'test'%20ELSE%20(SELECT%206253%20UNION%20SELECT%204457)%20END)),BLOCKED,Rule-based detection
+2025-07-12 17:49:52,127.0.0.1,http://localhost:5000/search?q=(SELECT%20(CASE%20WHEN%20(7425%3D7425)%20THEN%20'test'%20ELSE%20(SELECT%204973%20UNION%20SELECT%201673)%20END)),BLOCKED,Rule-based detection
+2025-07-12 17:49:52,127.0.0.1,"http://localhost:5000/search?q=test')%20AND%20EXTRACTVALUE(1448,CONCAT(0x5c,0x716a627071,(SELECT%20(ELT(1448%3D1448,1))),0x7170767071))%20AND%20('jCjV'%3D'jCjV",ALLOWED,
+2025-07-12 17:49:53,127.0.0.1,"http://localhost:5000/search?q=test'%20AND%20EXTRACTVALUE(1448,CONCAT(0x5c,0x716a627071,(SELECT%20(ELT(1448%3D1448,1))),0x7170767071))%20AND%20'xiEH'%3D'xiEH",ALLOWED,
+2025-07-12 17:49:53,127.0.0.1,"http://localhost:5000/search?q=test)%20AND%20EXTRACTVALUE(1448,CONCAT(0x5c,0x716a627071,(SELECT%20(ELT(1448%3D1448,1))),0x7170767071))%20AND%20(5487%3D5487",ALLOWED,
+2025-07-12 17:49:53,127.0.0.1,"http://localhost:5000/search?q=test%20AND%20EXTRACTVALUE(1448,CONCAT(0x5c,0x716a627071,(SELECT%20(ELT(1448%3D1448,1))),0x7170767071))",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,"http://localhost:5000/search?q=test%20AND%20EXTRACTVALUE(1448,CONCAT(0x5c,0x716a627071,(SELECT%20(ELT(1448%3D1448,1))),0x7170767071))--%20RCOd",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test')%20AND%203041%3DCAST((CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113))||(SELECT%20(CASE%20WHEN%20(3041%3D3041)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113))%20AS%20NUMERIC)%20AND%20('CypR'%3D'CypR,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test'%20AND%203041%3DCAST((CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113))||(SELECT%20(CASE%20WHEN%20(3041%3D3041)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113))%20AS%20NUMERIC)%20AND%20'ILYr'%3D'ILYr,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test)%20AND%203041%3DCAST((CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113))||(SELECT%20(CASE%20WHEN%20(3041%3D3041)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113))%20AS%20NUMERIC)%20AND%20(8448%3D8448,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test%20AND%203041%3DCAST((CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113))||(SELECT%20(CASE%20WHEN%20(3041%3D3041)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113))%20AS%20NUMERIC),BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test%20AND%203041%3DCAST((CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113))||(SELECT%20(CASE%20WHEN%20(3041%3D3041)%20THEN%201%20ELSE%200%20END))::text||(CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113))%20AS%20NUMERIC)--%20Dekt,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test')%20AND%203263%20IN%20(SELECT%20(CHAR(113)%2BCHAR(106)%2BCHAR(98)%2BCHAR(112)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3263%3D3263)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(112)%2BCHAR(118)%2BCHAR(112)%2BCHAR(113)))%20AND%20('maIY'%3D'maIY,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test'%20AND%203263%20IN%20(SELECT%20(CHAR(113)%2BCHAR(106)%2BCHAR(98)%2BCHAR(112)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3263%3D3263)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(112)%2BCHAR(118)%2BCHAR(112)%2BCHAR(113)))%20AND%20'Ukzd'%3D'Ukzd,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test)%20AND%203263%20IN%20(SELECT%20(CHAR(113)%2BCHAR(106)%2BCHAR(98)%2BCHAR(112)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3263%3D3263)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(112)%2BCHAR(118)%2BCHAR(112)%2BCHAR(113)))%20AND%20(6008%3D6008,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test%20AND%203263%20IN%20(SELECT%20(CHAR(113)%2BCHAR(106)%2BCHAR(98)%2BCHAR(112)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3263%3D3263)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(112)%2BCHAR(118)%2BCHAR(112)%2BCHAR(113))),BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test%20AND%203263%20IN%20(SELECT%20(CHAR(113)%2BCHAR(106)%2BCHAR(98)%2BCHAR(112)%2BCHAR(113)%2B(SELECT%20(CASE%20WHEN%20(3263%3D3263)%20THEN%20CHAR(49)%20ELSE%20CHAR(48)%20END))%2BCHAR(113)%2BCHAR(112)%2BCHAR(118)%2BCHAR(112)%2BCHAR(113)))--%20CkZK,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test')%20AND%201553%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113)||(SELECT%20(CASE%20WHEN%20(1553%3D1553)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20('RYcM'%3D'RYcM,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test'%20AND%201553%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113)||(SELECT%20(CASE%20WHEN%20(1553%3D1553)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20'okeC'%3D'okeC,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test)%20AND%201553%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113)||(SELECT%20(CASE%20WHEN%20(1553%3D1553)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113)||CHR(62)))%20FROM%20DUAL)%20AND%20(5380%3D5380,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test%20AND%201553%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113)||(SELECT%20(CASE%20WHEN%20(1553%3D1553)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113)||CHR(62)))%20FROM%20DUAL),BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test%20AND%201553%3D(SELECT%20UPPER(XMLType(CHR(60)||CHR(58)||CHR(113)||CHR(106)||CHR(98)||CHR(112)||CHR(113)||(SELECT%20(CASE%20WHEN%20(1553%3D1553)%20THEN%201%20ELSE%200%20END)%20FROM%20DUAL)||CHR(113)||CHR(112)||CHR(118)||CHR(112)||CHR(113)||CHR(62)))%20FROM%20DUAL)--%20FeQV,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,"http://localhost:5000/search?q=(SELECT%20CONCAT(CONCAT('qjbpq',(CASE%20WHEN%20(6085%3D6085)%20THEN%20'1'%20ELSE%20'0'%20END)),'qpvpq'))",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test');SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test';SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test);SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test;SELECT%20PG_SLEEP(5)--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test');WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test';WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test);WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,http://localhost:5000/search?q=test;WAITFOR%20DELAY%20'0:0:5'--,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,"http://localhost:5000/search?q=test');SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(66)||CHR(72)||CHR(70)||CHR(75),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:53,127.0.0.1,"http://localhost:5000/search?q=test';SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(66)||CHR(72)||CHR(70)||CHR(75),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,"http://localhost:5000/search?q=test);SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(66)||CHR(72)||CHR(70)||CHR(75),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,"http://localhost:5000/search?q=test;SELECT%20DBMS_PIPE.RECEIVE_MESSAGE(CHR(66)||CHR(72)||CHR(70)||CHR(75),5)%20FROM%20DUAL--",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test')%20AND%20(SELECT%202077%20FROM%20(SELECT(SLEEP(5)))hNmW)%20AND%20('WKjg'%3D'WKjg,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test'%20AND%20(SELECT%202077%20FROM%20(SELECT(SLEEP(5)))hNmW)%20AND%20'laPq'%3D'laPq,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test)%20AND%20(SELECT%202077%20FROM%20(SELECT(SLEEP(5)))hNmW)%20AND%20(1764%3D1764,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test%20AND%20(SELECT%202077%20FROM%20(SELECT(SLEEP(5)))hNmW),BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test%20AND%20(SELECT%202077%20FROM%20(SELECT(SLEEP(5)))hNmW)--%20wVbL,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test')%20AND%202375%3D(SELECT%202375%20FROM%20PG_SLEEP(5))%20AND%20('SFct'%3D'SFct,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test'%20AND%202375%3D(SELECT%202375%20FROM%20PG_SLEEP(5))%20AND%20'rNzW'%3D'rNzW,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test)%20AND%202375%3D(SELECT%202375%20FROM%20PG_SLEEP(5))%20AND%20(1112%3D1112,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test%20AND%202375%3D(SELECT%202375%20FROM%20PG_SLEEP(5)),BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test%20AND%202375%3D(SELECT%202375%20FROM%20PG_SLEEP(5))--%20VUAK,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test')%20WAITFOR%20DELAY%20'0:0:5'%20AND%20('kbXK'%3D'kbXK,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test'%20WAITFOR%20DELAY%20'0:0:5'%20AND%20'QUTF'%3D'QUTF,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test)%20WAITFOR%20DELAY%20'0:0:5'%20AND%20(4214%3D4214,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test%20WAITFOR%20DELAY%20'0:0:5',BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,http://localhost:5000/search?q=test%20WAITFOR%20DELAY%20'0:0:5'--%20MCqM,BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,"http://localhost:5000/search?q=test')%20AND%203431%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(71)||CHR(72)||CHR(72),5)%20AND%20('zoSC'%3D'zoSC",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,"http://localhost:5000/search?q=test'%20AND%203431%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(71)||CHR(72)||CHR(72),5)%20AND%20'nFdu'%3D'nFdu",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,"http://localhost:5000/search?q=test)%20AND%203431%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(71)||CHR(72)||CHR(72),5)%20AND%20(3362%3D3362",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,"http://localhost:5000/search?q=test%20AND%203431%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(71)||CHR(72)||CHR(72),5)",BLOCKED,UBA anomaly detection
+2025-07-12 17:49:54,127.0.0.1,"http://localhost:5000/search?q=test%20AND%203431%3DDBMS_PIPE.RECEIVE_MESSAGE(CHR(69)||CHR(71)||CHR(72)||CHR(72),5)--%20XQNh",BLOCKED,UBA anomaly detection
+2025-07-12 17:50:15,127.0.0.1,http://localhost:5000/search?q=test')%20ORDER%20BY%201--%20MQUU,BLOCKED,Rule-based detection
+2025-07-12 17:50:15,127.0.0.1,http://localhost:5000/search?q=test'%20ORDER%20BY%201--%20XQoq,BLOCKED,Rule-based detection
+2025-07-12 17:50:15,127.0.0.1,http://localhost:5000/search?q=test)%20ORDER%20BY%201--%20nycG,ALLOWED,
+2025-07-12 17:50:15,127.0.0.1,http://localhost:5000/search?q=test)%20ORDER%20BY%205453--%20MkSK,ALLOWED,
+2025-07-12 17:50:16,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%201--%20xKtW,ALLOWED,
+2025-07-12 17:50:16,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%201530--%20xTcg,ALLOWED,
+2025-07-12 17:50:16,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%201--%20yiYF,ALLOWED,
+2025-07-12 17:50:16,127.0.0.1,http://localhost:5000/search?q=test%20ORDER%20BY%204052--%20gKNa,ALLOWED,
+2025-07-12 22:21:03,127.0.0.1,http://localhost:5000/comment?text=<script>alert(1)</script>,BLOCKED,Rule-based detection
+2025-07-12 22:23:14,127.0.0.1,"http://localhost:5000/?search=UNION%20SELECT%20null,%20username,%20password%20FROM%20users",BLOCKED,Rule-based detection
+2025-07-12 22:27:18,127.0.0.1,http://localhost:5000/,ALLOWED,
+2025-07-12 22:30:57,127.0.0.1,http://localhost:5000/search?q=test,ALLOWED,
+2025-07-12 22:43:12,127.0.0.1,http://localhost:5000/,ALLOWED,
+2025-07-12 22:47:10,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:47:35,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:47:35,127.0.0.1,http://localhost:5000/sitemap.xml,ALLOWED,
+2025-07-12 22:47:35,127.0.0.1,http://localhost:5000/robots.txt,ALLOWED,
+2025-07-12 22:48:24,127.0.0.1,http://localhost:5000/1761877765707004995,ALLOWED,
+2025-07-12 22:48:45,127.0.0.1,http://localhost:5000/WEB-INF/web.xml,ALLOWED,
+2025-07-12 22:48:46,127.0.0.1,http://localhost:5000/WEB-INF/applicationContext.xml,ALLOWED,
+2025-07-12 22:49:06,127.0.0.1,http://localhost:5000/search?-s,ALLOWED,
+2025-07-12 22:49:14,127.0.0.1,http://localhost:5000/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input,ALLOWED,
+2025-07-12 22:49:28,127.0.0.1,http://localhost:5000/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input,ALLOWED,
+2025-07-12 22:49:35,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:50:33,127.0.0.1,http://localhost:5000/search?class.module.classLoader.DefaultAssertionStatus=nonsense,ALLOWED,
+2025-07-12 22:50:37,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:50:51,127.0.0.1,http://169.254.169.254/latest/meta-data/,ALLOWED,
+2025-07-12 22:50:51,127.0.0.1,http://aws.zaproxy.org/latest/meta-data/,ALLOWED,
+2025-07-12 22:50:54,127.0.0.1,http://169.254.169.254/computeMetadata/v1/,ALLOWED,
+2025-07-12 22:50:55,127.0.0.1,http://metadata.google.internal/computeMetadata/v1/,ALLOWED,
+2025-07-12 22:50:56,127.0.0.1,http://169.254.169.254/opc/v1/instance/,ALLOWED,
+2025-07-12 22:50:57,127.0.0.1,http://metadata.oraclecloud.com/opc/v1/instance/,ALLOWED,
+2025-07-12 22:50:57,127.0.0.1,http://100.100.100.200/latest/meta-data/,ALLOWED,
+2025-07-12 22:51:00,127.0.0.1,http://alibaba.zaproxy.org/latest/meta-data/,ALLOWED,
+2025-07-12 22:51:01,127.0.0.1,http://169.254.169.254/metadata/instance,ALLOWED,
+2025-07-12 22:51:08,127.0.0.1,http://localhost:5000/search/,ALLOWED,
+2025-07-12 22:51:16,127.0.0.1,http://localhost:5000/elmah.axd,ALLOWED,
+2025-07-12 22:51:17,127.0.0.1,http://localhost:5000/trace.axd,ALLOWED,
+2025-07-12 22:51:18,127.0.0.1,http://localhost:5000/.htaccess,ALLOWED,
+2025-07-12 22:51:24,127.0.0.1,http://localhost:5000/.env,ALLOWED,
+2025-07-12 22:51:46,127.0.0.1,http://localhost:5000/lfm.php,ALLOWED,
+2025-07-12 22:51:46,127.0.0.1,http://localhost:5000/.idea/WebServers.xml,ALLOWED,
+2025-07-12 22:51:48,127.0.0.1,http://localhost:5000/config/databases.yml,ALLOWED,
+2025-07-12 22:51:48,127.0.0.1,http://localhost:5000/actuator/health,ALLOWED,
+2025-07-12 22:51:51,127.0.0.1,http://localhost:5000/config/database.yml,ALLOWED,
+2025-07-12 22:51:51,127.0.0.1,http://localhost:5000/actuator/health,ALLOWED,
+2025-07-12 22:51:51,127.0.0.1,http://localhost:5000/.git/config,ALLOWED,
+2025-07-12 22:51:52,127.0.0.1,http://localhost:5000/.svn/entries,ALLOWED,
+2025-07-12 22:51:53,127.0.0.1,http://localhost:5000/.svn/wc.db,ALLOWED,
+2025-07-12 22:51:54,127.0.0.1,http://localhost:5000/CVS/root,ALLOWED,
+2025-07-12 22:51:54,127.0.0.1,http://localhost:5000/server-status,ALLOWED,
+2025-07-12 22:51:54,127.0.0.1,http://localhost:5000/core,ALLOWED,
+2025-07-12 22:51:54,127.0.0.1,http://localhost:5000/sftp-config.json,ALLOWED,
+2025-07-12 22:51:55,127.0.0.1,http://localhost:5000/WS_FTP.ini,ALLOWED,
+2025-07-12 22:51:55,127.0.0.1,http://localhost:5000/ws_ftp.ini,ALLOWED,
+2025-07-12 22:51:55,127.0.0.1,http://localhost:5000/WS_FTP.INI,ALLOWED,
+2025-07-12 22:51:55,127.0.0.1,http://localhost:5000/filezilla.xml,ALLOWED,
+2025-07-12 22:51:56,127.0.0.1,http://localhost:5000/sitemanager.xml,ALLOWED,
+2025-07-12 22:51:58,127.0.0.1,http://localhost:5000/FileZilla.xml,ALLOWED,
+2025-07-12 22:52:01,127.0.0.1,http://localhost:5000/winscp.ini,ALLOWED,
+2025-07-12 22:52:01,127.0.0.1,http://localhost:5000/WinSCP.ini,ALLOWED,
+2025-07-12 22:52:01,127.0.0.1,http://localhost:5000/.DS_Store,ALLOWED,
+2025-07-12 22:52:02,127.0.0.1,http://localhost:5000/.php_cs.cache,ALLOWED,
+2025-07-12 22:52:02,127.0.0.1,http://localhost:5000/DEADJOE,ALLOWED,
+2025-07-12 22:52:02,127.0.0.1,http://localhost:5000/sites/default/private/files/backup_migrate/scheduled/test.txt,ALLOWED,
+2025-07-12 22:52:03,127.0.0.1,http://localhost:5000/app/etc/local.xml,ALLOWED,
+2025-07-12 22:52:03,127.0.0.1,http://localhost:5000/server.key,ALLOWED,
+2025-07-12 22:52:06,127.0.0.1,http://localhost:5000/privatekey.key,ALLOWED,
+2025-07-12 22:52:07,127.0.0.1,http://localhost:5000/myserver.key,ALLOWED,
+2025-07-12 22:52:08,127.0.0.1,http://localhost:5000/key.pem,ALLOWED,
+2025-07-12 22:52:09,127.0.0.1,http://localhost:5000/id_rsa,ALLOWED,
+2025-07-12 22:52:09,127.0.0.1,http://localhost:5000/id_dsa,ALLOWED,
+2025-07-12 22:52:10,127.0.0.1,http://localhost:5000/.ssh/id_rsa,ALLOWED,
+2025-07-12 22:52:11,127.0.0.1,http://localhost:5000/.ssh/id_dsa,ALLOWED,
+2025-07-12 22:52:11,127.0.0.1,http://localhost:5000/adminer.php,ALLOWED,
+2025-07-12 22:52:15,127.0.0.1,http://localhost:5000/vb_test.php,ALLOWED,
+2025-07-12 22:52:16,127.0.0.1,http://localhost:5000/CHANGELOG.txt,ALLOWED,
+2025-07-12 22:52:18,127.0.0.1,http://localhost:5000/sites/default/files/.ht.sqlite,ALLOWED,
+2025-07-12 22:52:20,127.0.0.1,http://localhost:5000/composer.json,ALLOWED,
+2025-07-12 22:52:22,127.0.0.1,http://localhost:5000/composer.lock,ALLOWED,
+2025-07-12 22:52:24,127.0.0.1,http://localhost:5000/vim_settings.xml,ALLOWED,
+2025-07-12 22:52:24,127.0.0.1,http://localhost:5000/server-info,ALLOWED,
+2025-07-12 22:52:25,127.0.0.1,http://localhost:5000/phpinfo.php,ALLOWED,
+2025-07-12 22:52:26,127.0.0.1,http://localhost:5000/info.php,ALLOWED,
+2025-07-12 22:52:26,127.0.0.1,http://localhost:5000/i.php,ALLOWED,
+2025-07-12 22:52:27,127.0.0.1,http://localhost:5000/test.php,ALLOWED,
+2025-07-12 22:52:27,127.0.0.1,http://localhost:5000/_wpeprivate/config.json,ALLOWED,
+2025-07-12 22:52:27,127.0.0.1,http://localhost:5000/_framework/blazor.boot.json,ALLOWED,
+2025-07-12 22:52:27,127.0.0.1,http://localhost:5000/.hg,ALLOWED,
+2025-07-12 22:52:27,127.0.0.1,http://localhost:5000/.bzr,ALLOWED,
+2025-07-12 22:52:27,127.0.0.1,http://localhost:5000/._darcs,ALLOWED,
+2025-07-12 22:52:28,127.0.0.1,http://localhost:5000/BitKeeper,ALLOWED,
+2025-07-12 22:52:28,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:52:29,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:52:29,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:52:29,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:52:29,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:52:30,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-12 22:52:30,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-12 22:52:31,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-12 22:52:31,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-12 22:52:31,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-12 22:52:32,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-12 22:52:32,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:30,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:23:30,127.0.0.1,http://localhost:5000/robots.txt,ALLOWED,
+2025-07-13 08:23:30,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:23:31,127.0.0.1,http://localhost:5000/sitemap.xml,ALLOWED,
+2025-07-13 08:23:36,127.0.0.1,http://localhost:5000/6844353642833472416,ALLOWED,
+2025-07-13 08:23:36,127.0.0.1,http://localhost:5000/WEB-INF/web.xml,ALLOWED,
+2025-07-13 08:23:36,127.0.0.1,http://localhost:5000/WEB-INF/applicationContext.xml,ALLOWED,
+2025-07-13 08:23:37,127.0.0.1,http://localhost:5000/search?-s,ALLOWED,
+2025-07-13 08:23:37,127.0.0.1,http://localhost:5000/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input,ALLOWED,
+2025-07-13 08:23:37,127.0.0.1,http://localhost:5000/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input,ALLOWED,
+2025-07-13 08:23:37,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:23:38,127.0.0.1,http://localhost:5000/search?class.module.classLoader.DefaultAssertionStatus=nonsense,ALLOWED,
+2025-07-13 08:23:38,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:23:38,127.0.0.1,http://169.254.169.254/latest/meta-data/,ALLOWED,
+2025-07-13 08:23:38,127.0.0.1,http://aws.zaproxy.org/latest/meta-data/,ALLOWED,
+2025-07-13 08:23:38,127.0.0.1,http://169.254.169.254/computeMetadata/v1/,ALLOWED,
+2025-07-13 08:23:38,127.0.0.1,http://metadata.google.internal/computeMetadata/v1/,ALLOWED,
+2025-07-13 08:23:39,127.0.0.1,http://169.254.169.254/opc/v1/instance/,ALLOWED,
+2025-07-13 08:23:39,127.0.0.1,http://metadata.oraclecloud.com/opc/v1/instance/,ALLOWED,
+2025-07-13 08:23:39,127.0.0.1,http://100.100.100.200/latest/meta-data/,ALLOWED,
+2025-07-13 08:23:39,127.0.0.1,http://alibaba.zaproxy.org/latest/meta-data/,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://169.254.169.254/metadata/instance,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/search/,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/elmah.axd,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/trace.axd,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/.htaccess,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/.env,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/lfm.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/actuator/health,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/actuator/health,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/.idea/WebServers.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/config/databases.yml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/config/database.yml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/.git/config,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/.svn/entries,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/.svn/wc.db,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:39,127.0.0.1,http://localhost:5000/CVS/root,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/server-status,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/core,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/sftp-config.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/WS_FTP.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/ws_ftp.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/WS_FTP.INI,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/filezilla.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/sitemanager.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/FileZilla.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/winscp.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/WinSCP.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/.DS_Store,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/.php_cs.cache,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:40,127.0.0.1,http://localhost:5000/DEADJOE,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/sites/default/private/files/backup_migrate/scheduled/test.txt,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/app/etc/local.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/server.key,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/privatekey.key,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/myserver.key,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/key.pem,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/id_rsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/id_dsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/.ssh/id_rsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/.ssh/id_dsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/adminer.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/vb_test.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/CHANGELOG.txt,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:41,127.0.0.1,http://localhost:5000/sites/default/files/.ht.sqlite,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/composer.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/composer.lock,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/vim_settings.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/server-info,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/phpinfo.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/info.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/i.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/test.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/_wpeprivate/config.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/_framework/blazor.boot.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/.hg,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/.bzr,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/._darcs,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/BitKeeper,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:42,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:43,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:43,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:43,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:43,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:43,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:23:43,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:29:25,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:29:32,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:30:58,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:30:58,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:30:58,127.0.0.1,http://localhost:5000/sitemap.xml,ALLOWED,
+2025-07-13 08:30:58,127.0.0.1,http://localhost:5000/robots.txt,ALLOWED,
+2025-07-13 08:31:06,127.0.0.1,http://localhost:5000/1331918275685625484,ALLOWED,
+2025-07-13 08:31:06,127.0.0.1,http://localhost:5000/WEB-INF/web.xml,ALLOWED,
+2025-07-13 08:31:06,127.0.0.1,http://localhost:5000/WEB-INF/applicationContext.xml,ALLOWED,
+2025-07-13 08:31:06,127.0.0.1,http://localhost:5000/search?-s,ALLOWED,
+2025-07-13 08:31:06,127.0.0.1,http://localhost:5000/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input,ALLOWED,
+2025-07-13 08:31:06,127.0.0.1,http://localhost:5000/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input,ALLOWED,
+2025-07-13 08:31:06,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:31:08,127.0.0.1,http://localhost:5000/search?class.module.classLoader.DefaultAssertionStatus=nonsense,ALLOWED,
+2025-07-13 08:31:08,127.0.0.1,http://localhost:5000/search,ALLOWED,
+2025-07-13 08:31:08,127.0.0.1,http://169.254.169.254/latest/meta-data/,ALLOWED,
+2025-07-13 08:31:08,127.0.0.1,http://aws.zaproxy.org/latest/meta-data/,ALLOWED,
+2025-07-13 08:31:08,127.0.0.1,http://169.254.169.254/computeMetadata/v1/,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://metadata.google.internal/computeMetadata/v1/,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://169.254.169.254/opc/v1/instance/,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://metadata.oraclecloud.com/opc/v1/instance/,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://100.100.100.200/latest/meta-data/,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://alibaba.zaproxy.org/latest/meta-data/,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://169.254.169.254/metadata/instance,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/search/,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/elmah.axd,ALLOWED,
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/trace.axd,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/.htaccess,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/.env,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/lfm.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/actuator/health,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/.idea/WebServers.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/actuator/health,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/config/databases.yml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/config/database.yml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/.git/config,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/.svn/entries,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/.svn/wc.db,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/CVS/root,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/server-status,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/core,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/sftp-config.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/WS_FTP.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/ws_ftp.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/WS_FTP.INI,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/filezilla.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/sitemanager.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/FileZilla.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/winscp.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:09,127.0.0.1,http://localhost:5000/WinSCP.ini,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/.DS_Store,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/.php_cs.cache,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/DEADJOE,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/sites/default/private/files/backup_migrate/scheduled/test.txt,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/app/etc/local.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/server.key,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/privatekey.key,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/myserver.key,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/key.pem,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/id_rsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/id_dsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/.ssh/id_rsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/.ssh/id_dsa,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/adminer.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/vb_test.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/CHANGELOG.txt,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/sites/default/files/.ht.sqlite,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/composer.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:10,127.0.0.1,http://localhost:5000/composer.lock,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/vim_settings.xml,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/server-info,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/phpinfo.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/info.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/i.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/test.php,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/_wpeprivate/config.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/_framework/blazor.boot.json,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/.hg,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/.bzr,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/._darcs,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/BitKeeper,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:11,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:12,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:12,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:12,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:12,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:12,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
+2025-07-13 08:31:12,127.0.0.1,http://localhost:5000/search,BLOCKED,UBA anomaly detection
